@@ -1,13 +1,87 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+margin: 0;
+background-color: rgb(185, 200, 206);
+height: 100vh;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+box-sizing: content-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+ul{
+    list-style: none;
+    margin-left: 0;
+}
+button{
+    background-color: rgb(201, 216, 223);
+    color: black;
+    font-weight: bold;
+    border: none;
+    margin: 3px;
+    padding: 5px;
+    border-radius: 2px;
+    font-size: 11px;
+    height: 100%;
+}
+button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#root{
+    width: 80%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    /* background-color: rgb(238, 185, 185); */
+}
+.container{
+    padding: 10px;
+    width: 500px;
+    height: 100%;
+    position: relative;
+    border: 2px solid rgb(115, 137, 152);
+    overflow-y: scroll;
+}
+.comment-add-form{
+    width: 100%;
+    /* background-color: rgb(155, 155, 102); */
+    display: flex;
+    justify-content: space-between;
+    border: none;
+}
+.comment-list{
+    margin: 0px;
+    font-size: 10px;
+    padding: 3px;
+    color: rgb(70, 72, 75);
+}
+.comment-box{
+    padding: 5px;
+    width: 80%;
+    border: none;
+    outline: none;
+    font-size: 10px;
+}
+.comment-item-wrapper{
+    width: 100%;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0;
+    height: 30px;
+    height: 100%;
+
+}
+.comment-item{
+    width: 70%;
+    padding: 5px;
+    border-bottom: 1px solid gray;
+}
+.division-line{
+    border: 1px solid rgb(82, 85, 90);
+    width: 82%;
+    margin: 8px 0px 15px;
+    
 }
